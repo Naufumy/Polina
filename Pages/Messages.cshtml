@@ -1,0 +1,36 @@
+﻿@page
+@model MessagesModel
+@{
+    ViewData["Title"] = "Все послания";
+}
+
+<div class="container">
+    <h2>💌 Твои послания ко мне</h2>
+
+    @if (!Model.AllMessages.Any())
+    {
+        <p>Пока ты ничего не написала... Но я готов выслушать тебя в любое время</p>
+    }
+    else
+    {
+        <div class="message-grid">
+            @foreach (var msg in Model.AllMessages)
+            {
+                <div class="message-card @(msg.IsDone ? "done" : "")">
+                    <p><strong>ID:</strong> @msg.Id</p>
+                    <p><strong> Дата:</strong> @msg.Date</p>
+                    <p><strong> Кто обидел:</strong> @msg.Who</p>
+                    <p><strong> Причина:</strong> @msg.Reason</p>
+                    <p><strong> Как хочешь получить извинения:</strong> @msg.Wish</p>
+                    
+
+                    <form method="post" asp-page-handler="Done">
+                        <input type="hidden" name="id" value="@msg.Id" />
+                        <button class="done-button" type="submit">🗑 Удалить это послание</button>
+                    </form>
+
+                </div>
+            }
+        </div>
+    }
+</div>

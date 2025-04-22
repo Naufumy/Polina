@@ -1,0 +1,39 @@
+﻿@page
+@model YourTurnModel
+@{
+    ViewData["Title"] = "Твоя очередь";
+}
+
+<div class="container">
+    <h2>Расскажи, что у тебя на душе</h2>
+
+    <form method="post" id="blockForm">
+        <div id="blocks">
+            <!-- Послания будут добавляться сюда -->
+        </div>
+        <button type="button" onclick="addBlock()">Добавить послание</button>
+        <button type="submit">Готово</button>
+    </form>
+</div>
+
+@section Scripts {
+<script>
+    let blockIndex = 0;
+
+    function addBlock() {
+        const blocksDiv = document.getElementById("blocks");
+        const block = document.createElement("div");
+        block.classList.add("block");
+        block.innerHTML = `
+            <h4>Послание №${blockIndex + 1}</h4>
+            <label> Дата:<br> <input type="date" name="Blocks[${blockIndex}].Date" required></label><br>
+            <label> Кто обидел:<br> <input type="text" name="Blocks[${blockIndex}].Who" required></label><br>
+            <label> Причина:<br> <input type="text" name="Blocks[${blockIndex}].Reason" required></label><br>
+            <label> Как хочешь получить извинения:<br> <input type="text" name="Blocks[${blockIndex}].Wish" required></label>
+            <hr>
+        `;
+        blocksDiv.appendChild(block);
+        blockIndex++;
+    }
+</script>
+}
