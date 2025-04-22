@@ -45,3 +45,7 @@
   margin-top: 10px;
   color: #444;
 }
+
+body {
+  background: linear-gradient(90deg, #f9d5ec, #e0f7fa, #d1f8e0);
+}
