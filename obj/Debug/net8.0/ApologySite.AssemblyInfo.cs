@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApologySite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ee12bd87f02694e2cf9a928c252f6e9a2fb426d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e276fc0829d28791fa249fdb338be2650014a2b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApologySite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApologySite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
