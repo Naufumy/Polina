@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Naufumy\\ApologySite\\ApologySite.csproj": {}
+    "C:\\Users\\Naufumy\\Downloads\\Polina-Present-Fixed\\ApologySite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Naufumy\\ApologySite\\ApologySite.csproj": {
+    "C:\\Users\\Naufumy\\Downloads\\Polina-Present-Fixed\\ApologySite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Naufumy\\ApologySite\\ApologySite.csproj",
+        "projectUniqueName": "C:\\Users\\Naufumy\\Downloads\\Polina-Present-Fixed\\ApologySite.csproj",
         "projectName": "ApologySite",
-        "projectPath": "C:\\Users\\Naufumy\\ApologySite\\ApologySite.csproj",
+        "projectPath": "C:\\Users\\Naufumy\\Downloads\\Polina-Present-Fixed\\ApologySite.csproj",
         "packagesPath": "C:\\Users\\Naufumy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Naufumy\\ApologySite\\obj\\",
+        "outputPath": "C:\\Users\\Naufumy\\Downloads\\Polina-Present-Fixed\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
